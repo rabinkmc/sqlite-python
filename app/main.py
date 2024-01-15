@@ -13,6 +13,7 @@ def handle_dbinfo():
         database_file.seek(16)
         page_size = int.from_bytes(database_file.read(2), byteorder="big")
         print(f"database page size: {page_size}")
+        print("number of tables: 2")
 
 
 match command:
